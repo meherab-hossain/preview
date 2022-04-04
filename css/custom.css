@@ -117,8 +117,8 @@ header {
 
 .content p {
     margin-top: 20px;
-    font-family: 'Lato' !important;
-    font-size: 18px;
+    font-family: 'Jost' !important;
+    font-size: 17px;
     letter-spacing: .25px;
     color: #939393;
 }
@@ -140,9 +140,9 @@ header {
 }
 
 .box-preview h4 {
-    font-family: 'Lato';
+    font-family: 'Jost', sans-serif;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 17px;
     color: #686868;
     position: relative;    
 }
@@ -153,7 +153,7 @@ header {
     border-top: 1px solid #e7e6e6;
     height: 1px;
     width: 30px;
-    top: 13px;
+    top: 12px;
     margin-left: 10px;
 }
 
