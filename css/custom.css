@@ -105,7 +105,6 @@ header {
 
 .home-demos {
     padding: 50px 0px;
-    border-bottom: 1px solid #ececec;
 }
 
 .content h3 { 
@@ -173,6 +172,39 @@ header {
 
 .inner-demos {
     padding: 50px 0px;
+    border-bottom: 1px solid #fff1d0;
+    background: #FFFDF8;
+    border-top: 1px solid #fff1d0;
+}
+
+/* Features */
+
+.features {
+    padding: 50px 0px;
+}
+
+.feature-block {
+    padding: 20px;
+}
+
+.feature-block i {
+    background: #FFF3F2;
+    color: #F7421E;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80px;
+}
+
+.feature-block h4 {
+    font-family: 'Jost', sans-serif;
+    margin-top: 20px;
+    font-size: 17px;
+    color: #686868;
+    position: relative;    
 }
 
 /* footer */
