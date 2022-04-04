@@ -12,9 +12,10 @@ h2 {
     letter-spacing: 1px;
 }
 
-h3 {
-    font-size: 25px;
-    font-family: 'Lato', sans-serif;  
+/* Padding */
+
+.p-t-60 {
+    padding-top: 60px;
 }
 
 /* Buttons */
@@ -102,6 +103,100 @@ header {
 
 /* Home demos */
 
-#home-demos {
-    padding: 100px 0px;
+.home-demos {
+    padding: 50px 0px;
+    border-bottom: 1px solid #ececec;
+}
+
+.content h3 { 
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: #000;
+}
+
+.content p {
+    margin-top: 20px;
+    font-family: 'Lato' !important;
+    font-size: 18px;
+    letter-spacing: .25px;
+    color: #939393;
+}
+
+.number {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #F7421E;
+    color: #fff;
+    border-radius: 30px;
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.box-preview {
+    padding: 20px;
+}
+
+.box-preview h4 {
+    font-family: 'Lato';
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #686868;
+    position: relative;    
+}
+
+.box-preview h4::after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #e7e6e6;
+    height: 1px;
+    width: 30px;
+    top: 13px;
+    margin-left: 10px;
+}
+
+.box-preview a {
+    display: block;
+    border: 10px solid #ffffff;    
+    border-radius: 5px;    
+    box-shadow: 0 1px 50px rgba(153, 153, 153, 0.35);
+    transition: all 400ms ease-in-out;    
+}
+
+.box-preview a:hover {
+    transform: translateY(-10px);
+}
+
+/* Inner demos */
+
+.inner-demos {
+    padding: 50px 0px;
+}
+
+/* footer */
+
+footer {
+    background: #2a2d35;
+    padding: 20px 0px;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #b7b7b7;
 }
