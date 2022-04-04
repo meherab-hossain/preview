@@ -142,7 +142,7 @@ header {
     font-family: 'Jost', sans-serif;
     margin-top: 20px;
     font-size: 17px;
-    color: #686868;
+    color: #000;
     position: relative;    
 }
 
@@ -181,6 +181,13 @@ header {
 
 .features {
     padding: 50px 0px;
+    position: relative;
+}
+
+.signature {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .feature-block {
@@ -203,7 +210,7 @@ header {
     font-family: 'Jost', sans-serif;
     margin-top: 20px;
     font-size: 17px;
-    color: #686868;
+    color: #000;
     position: relative;    
 }
 
