@@ -344,10 +344,11 @@
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-md-4">
                     <div class="newsletter-block">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Enter your e-mail" aria-label="" aria-describedby="">
-                            <button class="btn btn-primary" type="button" id="">Subscribe</button>
-                        </div>                    
+                        <div class="input-group">                            
+                            <input type="text" class="form-control" placeholder="Enter your e-mail" name="email" id="email" aria-label="" aria-describedby="" required>
+                            <button class="btn btn-primary" type="submit" id="subscribe">Subscribe</button>                            
+                        </div>
+                        <div id="message"></div>                    
                     </div>    
                 </div>
             </div>
@@ -363,6 +364,37 @@
             </div>
         </div>
     </footer>
-    
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        
+        $(()=>{
+                $("#subscribe").click(function ()
+                {
+                    let email=$('#email').val()
+                    const data= {
+                        name: "Devollic Hoston",
+                        email: email,
+                        message:"devollic Email Subscription"                       
+                        
+                    }
+                    $.ajax({
+                    type: 'POST',
+                    contentType: "application/json",
+                    url: 'https://ms-contact.buildo.xyz',
+                    data: JSON.stringify(data),
+                    dataType: "json",
+                    success:function(data){
+                        $('#email').val("")
+                        $('#message').append("<div class='alert alert-success mt-2'>You have successfully Subscribed!</div>");
+                        window.setTimeout(function() {
+                           $('#message').hide('slow');
+                        }, 2000);
+                    }
+                
+                })
+            })
+        })
+        
+    </script>
 </body>
 </html>
